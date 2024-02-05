@@ -1,5 +1,7 @@
 % GENERIC INLET GEOMETRY 
-clear all clc % Input Coordinates %———————————————
+clear all clc
+
+% Input Coordinates %———————————————
 x = [0.501792114695 1.24521072797;
 -0.00358422939068 1.24521072797; 
 -0.462365591398 1.22222222222; 
@@ -21,6 +23,7 @@ x = [0.501792114695 1.24521072797;
 -0.321428571429 0.232824427481; 
 -0.489285714286 0.145038167939; 
 -0.731182795699 0];
+
 % x and y coordinates
 y = x(:,2); 
 x = -x(:,1);
@@ -94,7 +97,7 @@ plot([fan_x(1) fan_x(1)+0.123],[fan_y(1) fan_y(1)],'Linewidth',1.5);
 plot([fan_x(end) fan_x(end)+0.123],[fan_y(end) fan_y(end)],'Linewidth',1.5);
 plot(fan_x,fan_y);
 % plot spinner
-plot(spinner(:,1),spinner(:,2),'Linewidth',1.5);
+plot(spinner(:,1),spinner(:,2),'Linewidth',4.5); % green
 % plot axis
 grid on
 set(gca,'Fontsize',16,'Ylim',[0 2],'YTick',[0:0.2:2])
